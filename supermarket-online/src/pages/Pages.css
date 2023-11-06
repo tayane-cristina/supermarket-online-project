@@ -9,6 +9,64 @@
 
 /*PÁGINA MERCEARIA*/
 
+img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.li-show-products{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 50%;
+    border-radius: 5px;
+    padding: 4px;
+
+}
+
+.h3-mercearia {
+    font-size: 35px;
+    align-items: center;
+}
+
 .ul-mercearia li {
     list-style: none;
+}
+
+.div-mercearia-filter {
+    background-color: slateblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    min-height: 100vh;
+}
+
+.div-mercearia-filter aside {
+    background-color: thistle;
+    width: 15%;
+}
+
+.li-aside-filter {
+    margin: 0;
+}
+
+
+.div-mercearia-filter button {
+    position: relative;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.div-mercearia-filter button:hover {
+    background-color: rgba(128, 128, 128, 0.082);
 }
