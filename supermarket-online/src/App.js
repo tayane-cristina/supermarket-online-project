@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, BrowserRouter, Route } from 'react-router-dom'
+import useFetch from './hooks/useFetch'
+import Home from './pages/Home';
+import Mercearia from './pages/Mercearia';
+import Navbar from './components/Navbar';
 
 function App() {
+
+  const url = "http://localhost:3000/products"
+
+  const { data: produtos} = useFetch(url)
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <BrowserRouter>
+        <h1>Super Market Online</h1>
+        <Navbar />
+
+        <Routes>
+          <Route path='/' element={<Home produtos={produtos}/>}></Route>
+          <Route path='/mercearia' element={<Mercearia produtos={produtos}/>} ></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

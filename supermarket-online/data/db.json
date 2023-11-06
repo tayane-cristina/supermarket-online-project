@@ -1,0 +1,27 @@
+{
+    "products" : [
+        {
+            "id": 1,
+            "section": "Cereais",
+            "category": "Arroz",
+            "name": "Arroz branco carreteiro - 1k",
+            "price": 7.99
+        },
+
+        {
+            "id": 2,
+            "section": "Massas",
+            "category": "Macarrão",
+            "name": "Macarrão Galo - 500g",
+            "price": 9.99
+        },
+
+        {
+            "id": 3,
+            "section": "Conservas",
+            "category": "Azeite",
+            "name": "Azeite Borges - 1L",
+            "price": 30.95
+        }
+    ]
+}
